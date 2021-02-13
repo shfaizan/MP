@@ -22,7 +22,7 @@ from .views import price
 
 urlpatterns = [
     url(r'$', home_page),
-    url(r'$', contact),
+    url(r'$/contact/', contact),
     url(r'$', price),
     url(r'$', about),
     url(r'^admin/', admin.site.urls),

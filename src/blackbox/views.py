@@ -2,11 +2,13 @@ from django.http import HttpResponse
 from django.shortcuts import render
 
 def home_page(request):
-    
-    return render(request, "home_page.html", {})
+    context ={
+        "title": "helloo"
+    }
+    return render(request, "home_page.html", context)
 
 def contact(request):
-    return render(request, "home_page.html", {})
+    return render(request, "contact.html", {})
 
 def price(request):
     return render(request, "home_page.html", {})
